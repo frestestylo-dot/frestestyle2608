@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Frest Estylo | Productos Personalizados</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- TIPOGRAFÍA -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- ESTILOS -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Oswald', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      text-align: center;
+    }
+
+    header {
+      padding: 30px 20px;
+      background: #000;
+    }
+
+    header img {
+      width: 140px;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: #aaa;
+      margin-top: 10px;
+    }
+
+    .btn-historia {
+      background: none;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 10px 25px;
+      margin-top: 15px;
+      cursor: pointer;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+
+    .btn-historia:hover {
+      opacity: 0.7;
+    }
+
+    .historia {
+      display: none; /* oculto por defecto */
+      padding: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: #151515;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .product h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .product p {
+      color: #bbb;
+      font-size: 14px;
+      margin: 8px 0 15px;
+    }
+
+    .product a {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      background: #25D366; /* WhatsApp verde */
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+
+    .product a:hover {
+      opacity: 0.85;
+    }
+
+    .how {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .how h2 {
+      margin-bottom: 20px;
+    }
+
+    .how p {
+      color: #bbb;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      text-align: center;
+      background: #000;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="https://i.ibb.co/whrcSxfS/file-000000000de871f88d188e8d94dbcbc9.png" alt="Frest Estylo Logo" />
+    <h1>FREST ESTYLO</h1>
+    <p>La frescura del estilo auténtico</p>
+    <button class="btn-historia" onclick="toggleHistoria()">Historia</button>
+  </header>
+
+  <!-- HISTORIA -->
+  <section class="historia" id="historia">
+    <p>
+     Frest Estylo nace de la necesidad de expresar identidad, libertad y autenticidad a través del estilo. Hacemos cada artículo con pasión y amor, venimos de un lugar
+     donde rendirse no es una opción.
+     Cada diseño representa frescura, rebeldía y creatividad.
+    </p>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section class="catalogo">
+    <div class="container">
+      <div class="products">
+
+        <!-- POLOCHES -->
+        <div class="product">
+          <img src="https://i.ibb.co/Q73Jkf90/photo-2026-01-04-12-21-22.jpg" alt="Poloche personalizado">
+          <h3>Poloche personalizado</h3>
+          <p>Desde RD$350</p>
+          <a href="https://wa.me/18097500058?text=Hola%20quiero%20personalizar%20un%20poloche" target="_blank">Personalizar por WhatsApp</a>
+        </div>
+<div class="product">
+          <img src="https://i.ibb.co/wrNXHWcj/photo-2026-01-04-12-21-28.jpg" alt="Poloche oversize personalizado">
+          <h3>Poloche Oversize personalizado</h3>
+          <p>Desde RD$650</p>
+          <a href="https://wa.me/18097500058?text=Hola%20quiero%20personalizar%20un%20poloche%20oversized" target="_blank">Personalizar por WhatsApp</a>
+        </div>
+        <div class="product">
+          <img src="https://i.ibb.co/0RyJck1W/photo-2026-01-04-10-31-23.jpg" alt="Abrigo personalizado">
+          <h3>Abrigos personalizados</h3>
+          <p>Desde RD$850</p>
+          <a href="https://wa.me/18097500058?text=Hola%20quiero%20personalizar%20un%20abrigo" target="_blank">Personalizar por WhatsApp</a>
+        </div>
+
+        <!-- VASOS Y TAZAS -->
+        <div class="product">
+          <img src="https://i.ibb.co/Cp36ZSh1/photo-2026-01-04-10-22-12.jpg" alt="Vaso 20 Oz">
+          <h3>Vasos personalizados 20 Oz</h3>
+          <p>RD$950</p>
+          <a href="https://wa.me/18097500058?text=Hola%20quiero%20personalizar%20un%20vaso%2020oz" target="_blank">Personalizar por WhatsApp</a>
+        </div>
+        <div class="product">
+          <img src="https://i.ibb.co/0yyrYBM8/photo-2026-01-04-10-31-34.jpg" alt="Vaso 15 Oz">
+          <h3>Vasos personalizados 15 Oz</h3>
+          <p>RD$750</p>
+          <a href="https://wa.me/18097500058?text=Hola%20quiero%20personalizar%20un%20vaso%2015oz" target="_blank">Personalizar por WhatsApp</a>
+        </div>
+        <div class="product">
+          <img src="https://i.ibb.co/p6RNzVpf/photo-2026-01-04-12-21-13.jpg" alt="Taza personalizada">
+          <h3>Tazas personalizadas</h3>
+          <p>Desde RD$250</p>
+          <a href="https://wa.me/18097500058?text=Hola%20quiero%20personalizar%20una%20taza" target="_blank">Personalizar por WhatsApp</a>
+        </div>
+        <div class="product">
+          <img src="https://i.ibb.co/wr4SKHD0/photo-2026-01-04-10-31-28.jpg" alt="Taza mágica">
+          <h3>Tazas mágicas personalizadas</h3>
+          <p>RD$350</p>
+          <a href="https://wa.me/18097500058?text=Hola%20quiero%20personalizar%20una%20taza%20mágica" target="_blank">Personalizar por WhatsApp</a>
+        </div>
+
+        <!-- OTROS -->
+        <div class="product">
+          <img src="https://i.ibb.co/20KsBBJx/photo-2026-01-04-10-31-16.jpg" alt="Termos personalizados">
+          <h3>Termos personalizados (15 y 20 Oz)</h3>
+          <p>RD$900</p>
+          <a href="https://wa.me/18097500058?text=Hola%20quiero%20personalizar%20un%20termo" target="_blank">Personalizar por WhatsApp</a>
+        </div>
+        <div class="product">
+          <img src="https://i.ibb.co/DD2HvNFK/photo-2026-01-04-12-24-19.jpg" alt="Forros personalizados">
+          <h3>Forros personalizados</h3>
+          <p>RD$450</p>
+          <a href="https://wa.me/18097500058?text=Hola%20quiero%20personalizar%20un%20forro" target="_blank">Personalizar por WhatsApp</a>
+        </div>
+        <div class="product">
+          <img src="https://i.ibb.co/5hjZqstP/photo-2026-01-04-12-28-09.jpg" alt="Llaveros personalizados">
+          <h3>Llavero personalizado</h3>
+          <p>RD$250</p>
+          <a href="https://wa.me/18097500058?text=Hola%20quiero%20personalizar%20un%20llavero" target="_blank">Personalizar por WhatsApp</a>
+        </div>
+        <div class="product">
+          <img src="https://i.ibb.co/SDkk88Nx/photo-2026-01-04-10-31-39.jpg" alt="Destapadores personalizados">
+          <h3>Destapador personalizado</h3>
+          <p>RD$250</p>
+          <a href="https://wa.me/18097500058?text=Hola%20quiero%20personalizar%20un%20destapador" target="_blank">Personalizar por WhatsApp</a>
+        </div>
+
+      </div>
+
+      <!-- CÓMO FUNCIONA -->
+      <div class="how">
+        <h2>¿Cómo funciona?</h2>
+        <p>
+          Elige el producto que deseas, escríbenos por WhatsApp con tu idea,
+          te ayudamos a diseñarlo y lo personalizamos a tu estilo.
+          Hecho con calidad y dedicación en Los Mina, Las Lilas 🇩🇴
+        </p>
+      </div>
+    </div>
+  </section>
+<!-- FOOTER -->
+  <footer>
+    © 2026 Frest Estylo — Productos personalizados
+  </footer>
+
+  <!-- SCRIPT BOTÓN HISTORIA -->
+  <script>
+    function toggleHistoria() {
+      const historia = document.getElementById("historia");
+      if (window.getComputedStyle(historia).display === "none") {
+        historia.style.display = "block";
+        historia.scrollIntoView({ behavior: "smooth" });
+      } else {
+        historia.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
